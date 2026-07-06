@@ -1,13 +1,27 @@
 <script lang="ts">
 	import '$lib/styles/global.css';
-	import { base } from '$app/paths';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<title>Robert I. — Portfolio</title>
-	<meta name="description" content="Software engineer portfolio — projects, skills, and contact." />
+	<title>Robert Ioniță (i-robert2) — Cloud DevOps Engineer</title>
+	<meta
+		name="description"
+		content="Cloud DevOps engineer — Kubernetes on Azure, Terraform, CI/CD, GitOps, observability and cloud security. Portfolio of hands-on, verified infrastructure projects."
+	/>
+	<meta
+		name="keywords"
+		content="DevOps, Cloud, Azure, Kubernetes, AKS, Terraform, CI/CD, GitOps, Argo CD, Prometheus, SRE, Platform Engineering"
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Robert Ioniță (i-robert2) — Cloud DevOps Engineer" />
+	<meta
+		property="og:description"
+		content="Kubernetes on Azure, Terraform, CI/CD, GitOps, observability and cloud security — a portfolio of hands-on, verified infrastructure projects."
+	/>
+	<meta property="og:url" content="https://i-robert2.github.io/" />
+	<meta name="twitter:card" content="summary" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
@@ -17,11 +31,26 @@
 </svelte:head>
 
 <nav class="nav">
+	<a class="nav-brand" href="#top">i-robert2</a>
+	<ul class="nav-links">
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+		<li><a href="https://www.linkedin.com/in/robert-mihai-ionita/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+	</ul>
 </nav>
 
-<main>
+<main id="top">
 	{@render children()}
 </main>
+
+<footer class="footer">
+	<p>
+		Built with SvelteKit · Hosted on GitHub Pages ·
+		<a href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">github.com/i-robert2</a>
+	</p>
+	<p class="copyright">© {new Date().getFullYear()} Robert Ioniță</p>
+</footer>
 
 <style>
 	.nav {
@@ -31,18 +60,26 @@
 		max-width: var(--max-width);
 		margin: 0 auto;
 		padding: 1.25rem 1.5rem;
+		flex-wrap: wrap;
+		gap: 0.75rem;
 	}
 
 	.nav-brand {
+		font-family: var(--font-mono);
 		font-weight: 700;
-		font-size: 1.15rem;
+		font-size: 1.05rem;
 		color: var(--color-text);
+	}
+
+	.nav-brand:hover {
+		color: var(--color-accent);
 	}
 
 	.nav-links {
 		display: flex;
 		list-style: none;
 		gap: 1.5rem;
+		flex-wrap: wrap;
 	}
 
 	.nav-links a {
@@ -69,5 +106,12 @@
 		text-align: center;
 		color: var(--color-text-muted);
 		font-size: 0.85rem;
+		border-top: 1px solid var(--color-border);
+		margin-top: 2rem;
+	}
+
+	.copyright {
+		margin-top: 0.4rem;
+		opacity: 0.75;
 	}
 </style>

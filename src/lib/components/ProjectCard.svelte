@@ -10,7 +10,10 @@
 	rel="noopener noreferrer"
 	class="card"
 >
-	<h3 class="card-title">{project.title}</h3>
+	<h3 class="card-title">
+		<span>{project.title}</span>
+		<span class="arrow" aria-hidden="true">↗</span>
+	</h3>
 	<p class="card-desc">{project.description}</p>
 	<div class="card-tags">
 		{#if project.aiAssisted}
@@ -31,18 +34,40 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
-		transition: border-color 0.2s;
+		transition:
+			border-color 0.2s,
+			transform 0.15s,
+			box-shadow 0.2s;
 		text-decoration: none;
 		color: inherit;
 	}
 
 	.card:hover {
 		border-color: var(--color-accent);
+		transform: translateY(-3px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 	}
 
 	.card-title {
 		font-size: 1.15rem;
 		font-weight: 600;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+	}
+
+	.arrow {
+		color: var(--color-text-muted);
+		font-size: 0.95rem;
+		transition:
+			color 0.2s,
+			transform 0.2s;
+	}
+
+	.card:hover .arrow {
+		color: var(--color-accent);
+		transform: translate(2px, -2px);
 	}
 
 	.card-desc {
@@ -70,12 +95,5 @@
 		background: #1e3a5f;
 		color: #93c5fd;
 		border: 1px solid #2563eb;
-	}
-
-	.card-links {
-		display: flex;
-		gap: 1rem;
-		margin-top: 0.25rem;
-		font-size: 0.9rem;
 	}
 </style>
