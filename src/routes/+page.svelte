@@ -29,8 +29,8 @@
 	</div>
 	<div class="jump-links">
 		<a href="#skills">Skills</a>
-		<a href="#projects">Featured projects</a>
-		<a href="#more">More projects</a>
+		<a href="#projects">Featured Projects</a>
+		<a href="#more">More Projects</a>
 	</div>
 	<div class="hero-links">
 		<a class="btn-primary" href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -57,7 +57,7 @@
 
 <!-- Featured Projects -->
 <section id="projects" class="section">
-	<h2 class="section-title">Featured projects</h2>
+	<h2 class="section-title">Featured Projects</h2>
 	<div class="project-grid">
 		{#each projects as project}
 			<ProjectCard {project} />
@@ -67,7 +67,7 @@
 
 <!-- More Projects -->
 <section id="more" class="section">
-	<h2 class="section-title">More projects</h2>
+	<h2 class="section-title">More Projects</h2>
 	<p class="section-note">
 		Breadth across CI systems, configuration management, and on-prem IaC. Everything is on
 		<a href="https://github.com/i-robert2?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>.

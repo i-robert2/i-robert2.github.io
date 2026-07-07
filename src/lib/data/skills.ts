@@ -31,5 +31,9 @@ export const skills: SkillGroup[] = [
 	{
 		label: 'Practices',
 		items: ['GitOps', 'Progressive Delivery', 'DR (RTO/RPO)', 'FinOps', 'Landing Zones', 'SRE / SLOs']
+	},
+	{
+		label: 'Scripting & Tooling',
+		items: ['Bash', 'PowerShell', 'Git', 'YAML', 'Docker']
 	}
 ];
