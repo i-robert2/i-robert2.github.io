@@ -81,7 +81,7 @@
 
 <style>
 	.hero {
-		padding: 4rem 0 3rem;
+		padding: 2rem 0 3rem;
 	}
 
 	.roles {
@@ -166,11 +166,11 @@
 	}
 
 	.jump-links a {
-		padding: 0.45rem 0.9rem;
+		padding: 0.55rem 1.1rem;
 		border: 1px solid var(--color-border);
 		border-radius: var(--radius);
 		color: var(--color-text);
-		font-size: 0.85rem;
+		font-size: 0.92rem;
 		font-weight: 500;
 		background: var(--color-surface);
 		transition:
@@ -186,10 +186,10 @@
 
 	.btn,
 	.btn-primary {
-		padding: 0.55rem 1.35rem;
+		padding: 0.4rem 0.95rem;
 		border-radius: var(--radius);
 		font-weight: 600;
-		font-size: 0.9rem;
+		font-size: 0.82rem;
 		border: 1px solid var(--color-accent);
 		transition:
 			background 0.2s,
