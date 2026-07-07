@@ -10,10 +10,10 @@
 <section class="hero">
 	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
-		I'm focused on infrastructure and cloud, with hands-on <strong>DevOps</strong> experience built
-		through self-directed projects. I'm comfortable working across Kubernetes on Azure, Terraform,
-		CI/CD, GitOps, observability and cloud security — from initial provisioning to a running
-		production deployment.
+		Focused on infrastructure and cloud, with hands-on <strong>DevOps</strong> experience built
+		through self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD,
+		GitOps, observability and cloud security — from initial provisioning to a running production
+		deployment.
 	</p>
 	<p class="credibility">
 		This is my portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps,
@@ -83,6 +83,7 @@
 <style>
 	.hero {
 		padding: 4rem 0 3rem;
+		text-align: center;
 	}
 
 	.roles {
@@ -90,14 +91,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
 		gap: 0.6rem;
 	}
 
 	.roles-label {
-		font-size: 0.78rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
+		font-size: 0.9rem;
+		font-weight: 600;
 		color: var(--color-accent-hover);
 	}
 
@@ -139,6 +139,7 @@
 		color: var(--color-text);
 		line-height: 1.7;
 		text-align: justify;
+		text-align-last: center;
 	}
 
 	.subtitle strong {
@@ -152,6 +153,7 @@
 		color: var(--color-text-muted);
 		line-height: 1.6;
 		text-align: justify;
+		text-align-last: center;
 	}
 
 	.hero-links {
@@ -159,6 +161,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
 		gap: 0.75rem;
 	}
 
