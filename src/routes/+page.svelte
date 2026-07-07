@@ -94,8 +94,11 @@
 	}
 
 	.roles-label {
-		font-size: 0.9rem;
-		color: var(--color-text-muted);
+		font-size: 0.78rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: var(--color-accent-hover);
 	}
 
 	.role-chips {
@@ -135,7 +138,7 @@
 		font-size: 1.15rem;
 		color: var(--color-text);
 		line-height: 1.7;
-		max-width: 640px;
+		text-align: justify;
 	}
 
 	.subtitle strong {
@@ -148,7 +151,7 @@
 		font-size: 0.98rem;
 		color: var(--color-text-muted);
 		line-height: 1.6;
-		max-width: 640px;
+		text-align: justify;
 	}
 
 	.hero-links {
@@ -162,20 +165,28 @@
 	.jump-links {
 		display: inline-flex;
 		align-items: center;
-		gap: 1.1rem;
-		margin-left: 0.25rem;
-		padding-left: 1rem;
-		border-left: 1px solid var(--color-border);
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-left: 0.5rem;
 	}
 
 	.jump-links a {
-		color: var(--color-text-muted);
-		font-size: 0.9rem;
+		padding: 0.45rem 0.9rem;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		color: var(--color-text);
+		font-size: 0.85rem;
 		font-weight: 500;
+		background: var(--color-surface);
+		transition:
+			border-color 0.2s,
+			color 0.2s,
+			background 0.2s;
 	}
 
 	.jump-links a:hover {
-		color: var(--color-text);
+		border-color: var(--color-accent);
+		color: var(--color-accent-hover);
 	}
 
 	.btn,
