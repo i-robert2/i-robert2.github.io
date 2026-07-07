@@ -10,18 +10,18 @@
 <section class="hero">
 	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
-		Infrastructure and cloud focused, with hands-on <strong>DevOps</strong> experience built through
-		self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps,
-		observability and cloud security — from initial provisioning to a running production
-		deployment.
+		I'm focused on infrastructure and cloud, with hands-on <strong>DevOps</strong> experience built
+		through self-directed projects. I'm comfortable working across Kubernetes on Azure, Terraform,
+		CI/CD, GitOps, observability and cloud security — from initial provisioning to a running
+		production deployment.
 	</p>
 	<p class="credibility">
-		A portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps, progressive
-		delivery, observability, CI/CD, supply-chain security and landing-zone governance — each built with
-		Terraform, deployed, and verified end-to-end against defined acceptance criteria.
+		This is my portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps,
+		progressive delivery, observability, CI/CD, supply-chain security and landing-zone governance —
+		each built with Terraform, deployed, and verified end-to-end against defined acceptance criteria.
 	</p>
 	<div class="roles">
-		<span class="roles-label">Looking for roles such as</span>
+		<span class="roles-label">Looking for roles such as:</span>
 		<div class="role-chips">
 			{#each roles as role}
 				<span class="role-chip">{role}</span>
@@ -33,7 +33,8 @@
 		<a class="btn" href="https://www.linkedin.com/in/robert-mihai-ionita/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 		<span class="jump-links">
 			<a href="#skills">Skills</a>
-			<a href="#projects">Projects</a>
+			<a href="#projects">Featured projects</a>
+			<a href="#more">More projects</a>
 		</span>
 	</div>
 </section>
@@ -86,13 +87,15 @@
 
 	.roles {
 		margin-top: 1.75rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.6rem;
 	}
 
 	.roles-label {
-		display: block;
-		font-size: 0.85rem;
+		font-size: 0.9rem;
 		color: var(--color-text-muted);
-		margin-bottom: 0.6rem;
 	}
 
 	.role-chips {
