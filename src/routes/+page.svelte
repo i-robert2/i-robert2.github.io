@@ -8,12 +8,7 @@
 
 <!-- Hero -->
 <section class="hero">
-	<div class="role-chips">
-		{#each roles as role}
-			<span class="role-chip">{role}</span>
-		{/each}
-	</div>
-	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2 <img class="handle-avatar" src="https://github.com/i-robert2.png" alt="" width="36" height="36" />)</span></h1>
+	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
 		Infrastructure and cloud focused, with hands-on <strong>DevOps</strong> experience built through
 		self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps,
@@ -25,6 +20,14 @@
 		delivery, observability, CI/CD, supply-chain security and landing-zone governance — each built with
 		Terraform, deployed, and verified end-to-end against defined acceptance criteria.
 	</p>
+	<div class="roles">
+		<span class="roles-label">Looking for roles such as</span>
+		<div class="role-chips">
+			{#each roles as role}
+				<span class="role-chip">{role}</span>
+			{/each}
+		</div>
+	</div>
 	<div class="hero-links">
 		<a class="btn-primary" href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a>
 		<a class="btn" href="https://www.linkedin.com/in/robert-mihai-ionita/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -81,11 +84,21 @@
 		padding: 4rem 0 3rem;
 	}
 
+	.roles {
+		margin-top: 1.75rem;
+	}
+
+	.roles-label {
+		display: block;
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		margin-bottom: 0.6rem;
+	}
+
 	.role-chips {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.5rem;
-		margin-bottom: 1.25rem;
 	}
 
 	.role-chip {
@@ -114,18 +127,6 @@
 		font-weight: 600;
 	}
 
-	.handle-avatar {
-		display: inline-block;
-		width: 1.6rem;
-		height: 1.6rem;
-		border-radius: 50%;
-		vertical-align: middle;
-		margin: 0 0.1rem 0 0.35rem;
-		border: 1px solid var(--color-border);
-		position: relative;
-		top: -0.1rem;
-	}
-
 	.subtitle {
 		margin-top: 1.1rem;
 		font-size: 1.15rem;
@@ -148,7 +149,7 @@
 	}
 
 	.hero-links {
-		margin-top: 1.75rem;
+		margin-top: 1.25rem;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
