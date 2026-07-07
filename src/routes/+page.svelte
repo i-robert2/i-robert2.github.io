@@ -3,16 +3,16 @@
 	import { projects, moreProjects } from '$lib/data/projects';
 	import { skills } from '$lib/data/skills';
 
-	const roles = ['Cloud DevOps', 'Platform Engineering', 'SRE'];
+	const roles = ['Cloud/DevOps Engineer', 'Platform Engineer', 'SRE'];
 </script>
 
 <!-- Hero -->
 <section class="hero">
 	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
-		Focused on infrastructure and cloud, with hands-on DevOps experience built through self-directed
-		projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps, observability
-		and cloud security — from initial provisioning to a running production deployment.
+		Focused on cloud, infrastructure and automation, with hands-on DevOps experience built through
+		self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps,
+		observability and cloud security — from initial provisioning to a running production deployment.
 	</p>
 	<p class="credibility">
 		This is my portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps,
