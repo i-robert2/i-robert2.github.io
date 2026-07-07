@@ -18,7 +18,7 @@
 	<p class="credibility">
 		This is my portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps,
 		progressive delivery, observability, CI/CD, supply-chain security and landing-zone governance —
-		each built with Terraform, deployed, and verified end-to-end against defined acceptance criteria.
+		each built with Terraform, deployed, and verified end-to-end.
 	</p>
 	<div class="roles">
 		<span class="roles-label">Looking for roles such as:</span>
