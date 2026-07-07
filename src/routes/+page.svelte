@@ -2,6 +2,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { projects, moreProjects } from '$lib/data/projects';
 	import { skills } from '$lib/data/skills';
+	import { reveal } from '$lib/actions/reveal';
 
 	const roles = ['Cloud/DevOps Engineer', 'Platform Engineer', 'SRE'];
 </script>
@@ -39,7 +40,7 @@
 </section>
 
 <!-- Skills -->
-<section id="skills" class="section">
+<section id="skills" class="section" use:reveal>
 	<h2 class="section-title">Skills</h2>
 	<div class="skills-grid">
 		{#each skills as group}
@@ -56,7 +57,7 @@
 </section>
 
 <!-- Featured Projects -->
-<section id="projects" class="section">
+<section id="projects" class="section" use:reveal>
 	<h2 class="section-title">Featured Projects</h2>
 	<div class="project-grid">
 		{#each projects as project}
@@ -66,7 +67,7 @@
 </section>
 
 <!-- More Projects -->
-<section id="more" class="section">
+<section id="more" class="section" use:reveal>
 	<h2 class="section-title">More Projects</h2>
 	<p class="section-note">
 		Breadth across CI systems, configuration management, and on-prem IaC. Everything is on
@@ -214,6 +215,65 @@
 
 	.section {
 		padding: 2.5rem 0;
+	}
+
+	/* Scroll-reveal: children start hidden, ease in with a stagger when the section enters view */
+	.section :global(.section-title),
+	.section :global(.section-note),
+	.section :global(.skills-grid > *),
+	.section :global(.project-grid > *) {
+		opacity: 0;
+		transform: translateY(26px);
+		transition:
+			opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+			transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		will-change: opacity, transform;
+	}
+
+	.section:global(.is-visible) :global(.section-title),
+	.section:global(.is-visible) :global(.section-note),
+	.section:global(.is-visible) :global(.skills-grid > *),
+	.section:global(.is-visible) :global(.project-grid > *) {
+		opacity: 1;
+		transform: none;
+	}
+
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(2)),
+	.section:global(.is-visible) :global(.project-grid > *:nth-child(2)) {
+		transition-delay: 0.06s;
+	}
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(3)),
+	.section:global(.is-visible) :global(.project-grid > *:nth-child(3)) {
+		transition-delay: 0.12s;
+	}
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(4)),
+	.section:global(.is-visible) :global(.project-grid > *:nth-child(4)) {
+		transition-delay: 0.18s;
+	}
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(5)),
+	.section:global(.is-visible) :global(.project-grid > *:nth-child(5)) {
+		transition-delay: 0.24s;
+	}
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(6)),
+	.section:global(.is-visible) :global(.project-grid > *:nth-child(6)) {
+		transition-delay: 0.3s;
+	}
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(7)) {
+		transition-delay: 0.36s;
+	}
+	.section:global(.is-visible) :global(.skills-grid > *:nth-child(8)) {
+		transition-delay: 0.42s;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.section :global(.section-title),
+		.section :global(.section-note),
+		.section :global(.skills-grid > *),
+		.section :global(.project-grid > *) {
+			opacity: 1;
+			transform: none;
+			transition: none;
+		}
 	}
 
 	.section-title {
