@@ -95,7 +95,6 @@
 
 	.roles-label {
 		font-size: 0.9rem;
-		font-weight: 700;
 		color: var(--color-accent-hover);
 	}
 
