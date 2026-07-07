@@ -30,12 +30,6 @@
 	/>
 </svelte:head>
 
-<nav class="nav">
-	<a class="nav-brand" href="#top" aria-label="Home">
-		<img class="avatar" src="https://github.com/i-robert2.png" alt="Robert Ioniță" width="40" height="40" />
-	</a>
-</nav>
-
 <main id="top">
 	{@render children()}
 </main>
@@ -49,35 +43,6 @@
 </footer>
 
 <style>
-	.nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: var(--max-width);
-		margin: 0 auto;
-		padding: 1.25rem 1.5rem;
-		flex-wrap: wrap;
-		gap: 0.75rem;
-	}
-
-	.nav-brand {
-		display: inline-flex;
-		align-items: center;
-		border-radius: 999px;
-	}
-
-	.avatar {
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		border: 1px solid var(--color-border);
-		transition: border-color 0.2s;
-	}
-
-	.nav-brand:hover .avatar {
-		border-color: var(--color-accent);
-	}
-
 	main {
 		max-width: var(--max-width);
 		margin: 0 auto;

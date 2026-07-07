@@ -13,7 +13,7 @@
 			<span class="role-chip">{role}</span>
 		{/each}
 	</div>
-	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
+	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2 <img class="handle-avatar" src="https://github.com/i-robert2.png" alt="" width="36" height="36" />)</span></h1>
 	<p class="subtitle">
 		Infrastructure and cloud focused, with hands-on <strong>DevOps</strong> experience built through
 		self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps,
@@ -112,6 +112,18 @@
 	.handle {
 		color: var(--color-text-muted);
 		font-weight: 600;
+	}
+
+	.handle-avatar {
+		display: inline-block;
+		width: 1.6rem;
+		height: 1.6rem;
+		border-radius: 50%;
+		vertical-align: middle;
+		margin: 0 0.1rem 0 0.35rem;
+		border: 1px solid var(--color-border);
+		position: relative;
+		top: -0.1rem;
 	}
 
 	.subtitle {
