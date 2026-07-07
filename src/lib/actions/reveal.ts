@@ -1,8 +1,9 @@
 import type { Action } from 'svelte/action';
 
 /**
- * Adds an `is-visible` class the first time the element scrolls into view,
- * letting CSS drive a fade/slide-in transition. Respects reduced-motion.
+ * Toggles an `is-visible` class as the element enters/leaves the viewport,
+ * letting CSS drive a fade/slide-in transition. Re-animates every time the
+ * element scrolls back into view (both directions). Respects reduced-motion.
  */
 export const reveal: Action<HTMLElement, { threshold?: number; rootMargin?: string } | undefined> = (
 	node,
@@ -22,14 +23,11 @@ export const reveal: Action<HTMLElement, { threshold?: number; rootMargin?: stri
 	const observer = new IntersectionObserver(
 		(entries) => {
 			for (const entry of entries) {
-				if (entry.isIntersecting) {
-					node.classList.add('is-visible');
-					observer.unobserve(node);
-				}
+				node.classList.toggle('is-visible', entry.isIntersecting);
 			}
 		},
 		{
-			threshold: options?.threshold ?? 0.15,
+			threshold: options?.threshold ?? 0.12,
 			rootMargin: options?.rootMargin ?? '0px 0px -10% 0px'
 		}
 	);

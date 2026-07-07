@@ -8,7 +8,7 @@
 </script>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero" use:reveal>
 	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
 		Focused on cloud, infrastructure and automation, with hands-on DevOps experience built through
@@ -83,6 +83,45 @@
 <style>
 	.hero {
 		padding: 2rem 0 3rem;
+	}
+
+	/* Hero intro / re-reveal: direct children fade + slide in with a stagger */
+	.hero > * {
+		opacity: 0;
+		transform: translateY(20px);
+		transition:
+			opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+			transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+		will-change: opacity, transform;
+	}
+
+	.hero:global(.is-visible) > * {
+		opacity: 1;
+		transform: none;
+	}
+
+	.hero:global(.is-visible) > *:nth-child(2) {
+		transition-delay: 0.05s;
+	}
+	.hero:global(.is-visible) > *:nth-child(3) {
+		transition-delay: 0.1s;
+	}
+	.hero:global(.is-visible) > *:nth-child(4) {
+		transition-delay: 0.15s;
+	}
+	.hero:global(.is-visible) > *:nth-child(5) {
+		transition-delay: 0.2s;
+	}
+	.hero:global(.is-visible) > *:nth-child(6) {
+		transition-delay: 0.25s;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.hero > * {
+			opacity: 1;
+			transform: none;
+			transition: none;
+		}
 	}
 
 	.roles {
