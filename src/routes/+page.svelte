@@ -329,8 +329,8 @@
 
 	.skills-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-		gap: 1.25rem;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
 	}
 
 	.skill-group {
@@ -370,9 +370,44 @@
 		gap: 1.25rem;
 	}
 
+	@media (max-width: 900px) {
+		.skills-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
 	@media (max-width: 640px) {
+		.hero {
+			padding: 1rem 0 2rem;
+		}
+
 		.hero h1 {
-			font-size: 2rem;
+			font-size: 1.85rem;
+		}
+
+		.handle {
+			white-space: nowrap;
+		}
+
+		.subtitle {
+			font-size: 1.02rem;
+			text-align: left;
+		}
+
+		.credibility {
+			text-align: left;
+		}
+
+		.roles {
+			margin-top: 1.25rem;
+		}
+
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.section {
+			padding: 2rem 0;
 		}
 	}
 </style>
