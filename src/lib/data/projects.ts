@@ -96,12 +96,5 @@ export const moreProjects: Project[] = [
 			'End-to-end IaC on Proxmox VE: Terraform provisions VMs, Ansible configures them, Sentinel enforces policy, and GitLab CI orchestrates it all.',
 		tags: ['Terraform', 'Ansible', 'GitLab CI', 'Sentinel', 'Proxmox VE'],
 		github: 'https://github.com/i-robert2/DevOps-Gitlab-Infra'
-	},
-	{
-		title: 'Policy-as-Code',
-		description:
-			'Sentinel policy-as-code enforcing governance guardrails on Terraform-managed infrastructure.',
-		tags: ['Sentinel', 'Terraform', 'Policy-as-Code', 'HCL'],
-		github: 'https://github.com/i-robert2/terraform-sentinel-policies'
 	}
 ];
