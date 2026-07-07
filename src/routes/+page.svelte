@@ -10,10 +10,9 @@
 <section class="hero">
 	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
-		Focused on infrastructure and cloud, with hands-on <strong>DevOps</strong> experience built
-		through self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD,
-		GitOps, observability and cloud security — from initial provisioning to a running production
-		deployment.
+		Focused on infrastructure and cloud, with hands-on DevOps experience built through self-directed
+		projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps, observability
+		and cloud security — from initial provisioning to a running production deployment.
 	</p>
 	<p class="credibility">
 		This is my portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps,
@@ -28,14 +27,14 @@
 			{/each}
 		</div>
 	</div>
+	<div class="jump-links">
+		<a href="#skills">Skills</a>
+		<a href="#projects">Featured projects</a>
+		<a href="#more">More projects</a>
+	</div>
 	<div class="hero-links">
 		<a class="btn-primary" href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a>
 		<a class="btn" href="https://www.linkedin.com/in/robert-mihai-ionita/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-		<span class="jump-links">
-			<a href="#skills">Skills</a>
-			<a href="#projects">Featured projects</a>
-			<a href="#more">More projects</a>
-		</span>
 	</div>
 </section>
 
@@ -83,7 +82,6 @@
 <style>
 	.hero {
 		padding: 4rem 0 3rem;
-		text-align: center;
 	}
 
 	.roles {
@@ -97,7 +95,7 @@
 
 	.roles-label {
 		font-size: 0.9rem;
-		font-weight: 600;
+		font-weight: 700;
 		color: var(--color-accent-hover);
 	}
 
@@ -139,12 +137,7 @@
 		color: var(--color-text);
 		line-height: 1.7;
 		text-align: justify;
-		text-align-last: center;
-	}
-
-	.subtitle strong {
-		color: var(--color-text);
-		font-weight: 600;
+		text-wrap: pretty;
 	}
 
 	.credibility {
@@ -153,24 +146,24 @@
 		color: var(--color-text-muted);
 		line-height: 1.6;
 		text-align: justify;
-		text-align-last: center;
+		text-wrap: pretty;
+	}
+
+	.jump-links {
+		margin-top: 1.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
 	}
 
 	.hero-links {
-		margin-top: 1.25rem;
+		margin-top: 0.75rem;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		gap: 0.75rem;
-	}
-
-	.jump-links {
-		display: inline-flex;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-		margin-left: 0.5rem;
 	}
 
 	.jump-links a {
