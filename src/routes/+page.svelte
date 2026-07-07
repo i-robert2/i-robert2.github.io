@@ -17,13 +17,13 @@
 	<p class="subtitle">
 		Infrastructure and cloud focused, with hands-on <strong>DevOps</strong> experience built through
 		self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps,
-		observability and cloud security — from initial provisioning through to a running production
+		observability and cloud security — from initial provisioning to a running production
 		deployment.
 	</p>
 	<p class="credibility">
 		A portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps, progressive
-		delivery, observability, CI/CD, supply-chain security and landing-zone governance — each built
-		end-to-end with Terraform and verified against defined acceptance criteria.
+		delivery, observability, CI/CD, supply-chain security and landing-zone governance — each built with
+		Terraform, deployed, and verified end-to-end against defined acceptance criteria.
 	</p>
 	<div class="hero-links">
 		<a class="btn-primary" href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a>
