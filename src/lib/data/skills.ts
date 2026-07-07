@@ -6,7 +6,7 @@ export interface SkillGroup {
 export const skills: SkillGroup[] = [
 	{
 		label: 'Cloud & Platform',
-		items: ['Azure', 'AKS', 'Azure Front Door', 'Key Vault', 'Entra ID', 'AWS (learning)']
+		items: ['Azure', 'AKS', 'Azure Front Door', 'Key Vault', 'Entra ID', 'AWS (learning)', 'GCP & Apigee (support)']
 	},
 	{
 		label: 'Kubernetes',
