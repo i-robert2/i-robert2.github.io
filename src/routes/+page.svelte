@@ -15,17 +15,23 @@
 	</div>
 	<h1>Hi, I'm <span class="accent">Robert</span> <span class="handle">(i-robert2)</span></h1>
 	<p class="subtitle">
-		Cloud DevOps engineer specializing in <strong>Kubernetes on Azure</strong>. I automate the full
-		path from infrastructure to production — Terraform, CI/CD, GitOps, observability and cloud
-		security — and ship it cost-aware and verified.
+		Infrastructure and cloud focused, with hands-on <strong>DevOps</strong> experience built through
+		self-directed projects. Comfortable working across Kubernetes on Azure, Terraform, CI/CD, GitOps,
+		observability and cloud security — from initial provisioning through to a running production
+		deployment.
 	</p>
 	<p class="credibility">
-		13 hands-on Azure projects, junior to senior — each deployed for real, verified end-to-end, and
-		torn down to keep costs near zero.
+		A portfolio of 13 Azure projects spanning AKS, multi-region disaster recovery, GitOps, progressive
+		delivery, observability, CI/CD, supply-chain security and landing-zone governance — each built
+		end-to-end with Terraform and verified against defined acceptance criteria.
 	</p>
 	<div class="hero-links">
 		<a class="btn-primary" href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a>
 		<a class="btn" href="https://www.linkedin.com/in/robert-mihai-ionita/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+		<span class="jump-links">
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+		</span>
 	</div>
 </section>
 
@@ -132,7 +138,28 @@
 	.hero-links {
 		margin-top: 1.75rem;
 		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
 		gap: 0.75rem;
+	}
+
+	.jump-links {
+		display: inline-flex;
+		align-items: center;
+		gap: 1.1rem;
+		margin-left: 0.25rem;
+		padding-left: 1rem;
+		border-left: 1px solid var(--color-border);
+	}
+
+	.jump-links a {
+		color: var(--color-text-muted);
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+
+	.jump-links a:hover {
+		color: var(--color-text);
 	}
 
 	.btn,

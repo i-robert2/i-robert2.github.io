@@ -31,13 +31,9 @@
 </svelte:head>
 
 <nav class="nav">
-	<a class="nav-brand" href="#top">i-robert2</a>
-	<ul class="nav-links">
-		<li><a href="#skills">Skills</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="https://github.com/i-robert2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-		<li><a href="https://www.linkedin.com/in/robert-mihai-ionita/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-	</ul>
+	<a class="nav-brand" href="#top" aria-label="Home">
+		<img class="avatar" src="https://github.com/i-robert2.png" alt="Robert Ioniță" width="40" height="40" />
+	</a>
 </nav>
 
 <main id="top">
@@ -65,32 +61,21 @@
 	}
 
 	.nav-brand {
-		font-family: var(--font-mono);
-		font-weight: 700;
-		font-size: 1.05rem;
-		color: var(--color-text);
+		display: inline-flex;
+		align-items: center;
+		border-radius: 999px;
 	}
 
-	.nav-brand:hover {
-		color: var(--color-accent);
+	.avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 1px solid var(--color-border);
+		transition: border-color 0.2s;
 	}
 
-	.nav-links {
-		display: flex;
-		list-style: none;
-		gap: 1.5rem;
-		flex-wrap: wrap;
-	}
-
-	.nav-links a {
-		color: var(--color-text-muted);
-		font-size: 0.9rem;
-		font-weight: 500;
-		transition: color 0.2s;
-	}
-
-	.nav-links a:hover {
-		color: var(--color-text);
+	.nav-brand:hover .avatar {
+		border-color: var(--color-accent);
 	}
 
 	main {
