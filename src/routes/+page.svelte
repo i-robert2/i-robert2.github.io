@@ -390,7 +390,7 @@
 		}
 
 		.hero h1 {
-			font-size: 1.85rem;
+			font-size: 1.45rem;
 		}
 
 		.handle {
