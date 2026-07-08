@@ -28,6 +28,9 @@
 			{/each}
 		</div>
 	</div>
+	<div class="roles">
+		<span class="roles-label">Currently working as: SharePoint Online &amp; OneDrive Support Engineer</span>
+	</div>
 	<div class="jump-links">
 		<a href="#skills">Skills</a>
 		<a href="#projects">Featured Projects</a>
@@ -400,6 +403,17 @@
 
 		.roles {
 			margin-top: 1.25rem;
+		}
+
+		.role-chips {
+			flex-wrap: nowrap;
+			gap: 0.35rem;
+		}
+
+		.role-chip {
+			font-size: 0.66rem;
+			padding: 0.25rem 0.5rem;
+			white-space: nowrap;
 		}
 
 		.skills-grid {
