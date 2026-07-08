@@ -224,7 +224,8 @@
 	}
 
 	.jump-links a {
-		padding: 0.55rem 1.1rem;
+		position: relative;
+		padding: 0.55rem 1.5rem 0.55rem 1.1rem;
 		border: 1px solid var(--color-border);
 		border-radius: var(--radius);
 		color: var(--color-text);
@@ -235,6 +236,21 @@
 			border-color 0.2s,
 			color 0.2s,
 			background 0.2s;
+	}
+
+	.jump-links a::after {
+		content: '↗';
+		position: absolute;
+		top: 3px;
+		right: 6px;
+		font-size: 0.7rem;
+		line-height: 1;
+		color: var(--color-accent);
+		transition: transform 0.15s ease;
+	}
+
+	.jump-links a:hover::after {
+		transform: translate(1px, -1px);
 	}
 
 	.jump-links a:hover {
@@ -408,7 +424,7 @@
 
 	@media (max-width: 640px) {
 		.hero {
-			padding: 1rem 0 2rem;
+			padding: 1rem 0;
 		}
 
 		.hero h1 {
@@ -420,35 +436,50 @@
 		}
 
 		.subtitle {
-			font-size: 1.02rem;
-			text-align: left;
+			font-size: 1rem;
+			line-height: 1.62;
+			margin-top: 0.8rem;
+			text-align: justify;
 		}
 
 		.credibility {
-			text-align: left;
+			font-size: 0.92rem;
+			line-height: 1.58;
+			margin-top: 0.78rem;
+			text-align: justify;
 		}
 
 		.roles {
-			margin-top: 0.9rem;
+			margin-top: 0.85rem;
+		}
+
+		.roles-label {
+			font-size: 0.88rem;
 		}
 
 		.roles.current-role {
-			margin-top: 0.55rem;
+			margin-top: 0.6rem;
 		}
 
 		.jump-links {
-			margin-top: 1.1rem;
-			gap: 0.35rem;
+			margin-top: 1.15rem;
+			gap: 0.4rem;
 		}
 
 		.jump-links a {
-			padding: 0.35rem 0.58rem;
-			font-size: 0.72rem;
+			padding: 0.48rem 0.92rem 0.48rem 0.64rem;
+			font-size: 0.78rem;
+		}
+
+		.jump-links a::after {
+			top: 4px;
+			right: 6px;
+			font-size: 0.62rem;
 		}
 
 		.hero-links {
-			margin-top: 0.6rem;
-			gap: 0.55rem;
+			margin-top: 0.7rem;
+			gap: 0.6rem;
 		}
 
 		.social-label {
@@ -456,12 +487,12 @@
 		}
 
 		.social {
-			padding: 0.5rem 0.55rem;
+			padding: 0.3rem 0.5rem;
 		}
 
 		.social-icon {
-			width: 1.2rem;
-			height: 1.2rem;
+			width: 1rem;
+			height: 1rem;
 		}
 
 		.role-chips {
