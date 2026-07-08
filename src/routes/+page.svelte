@@ -424,7 +424,7 @@
 
 	@media (max-width: 640px) {
 		.hero {
-			padding: 1rem 0;
+			padding: 0.6rem 0;
 		}
 
 		.hero h1 {
@@ -436,49 +436,49 @@
 		}
 
 		.subtitle {
-			font-size: 1rem;
-			line-height: 1.62;
-			margin-top: 0.8rem;
+			font-size: 0.94rem;
+			line-height: 1.5;
+			margin-top: 0.6rem;
 			text-align: justify;
 		}
 
 		.credibility {
-			font-size: 0.92rem;
-			line-height: 1.58;
-			margin-top: 0.78rem;
+			font-size: 0.86rem;
+			line-height: 1.48;
+			margin-top: 0.6rem;
 			text-align: justify;
 		}
 
 		.roles {
-			margin-top: 0.85rem;
+			margin-top: 0.7rem;
 		}
 
 		.roles-label {
-			font-size: 0.88rem;
+			font-size: 0.84rem;
 		}
 
 		.roles.current-role {
-			margin-top: 0.6rem;
+			margin-top: 0.5rem;
 		}
 
 		.jump-links {
-			margin-top: 1.15rem;
-			gap: 0.4rem;
+			margin-top: 0.85rem;
+			gap: 0.3rem;
 		}
 
 		.jump-links a {
-			padding: 0.48rem 0.92rem 0.48rem 0.64rem;
-			font-size: 0.78rem;
+			padding: 0.4rem 0.78rem 0.4rem 0.55rem;
+			font-size: 0.75rem;
 		}
 
 		.jump-links a::after {
 			top: 4px;
 			right: 6px;
-			font-size: 0.62rem;
+			font-size: 0.6rem;
 		}
 
 		.hero-links {
-			margin-top: 0.7rem;
+			margin-top: 0.55rem;
 			gap: 0.6rem;
 		}
 
