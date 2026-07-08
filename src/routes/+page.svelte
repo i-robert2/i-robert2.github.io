@@ -28,8 +28,8 @@
 			{/each}
 		</div>
 	</div>
-	<div class="roles">
-		<span class="roles-label">Currently working as: SharePoint Online &amp; OneDrive Support Engineer</span>
+	<div class="roles current-role">
+		<span class="roles-label">Current role: SharePoint Online &amp; OneDrive Support Engineer</span>
 	</div>
 	<div class="jump-links">
 		<a href="#skills">Skills</a>
@@ -136,9 +136,14 @@
 		gap: 0.6rem;
 	}
 
+	.roles.current-role {
+		margin-top: 0.85rem;
+	}
+
 	.roles-label {
 		font-size: 0.9rem;
 		color: var(--color-accent-hover);
+		text-align: center;
 	}
 
 	.role-chips {
@@ -402,7 +407,15 @@
 		}
 
 		.roles {
-			margin-top: 1.25rem;
+			margin-top: 0.9rem;
+		}
+
+		.roles.current-role {
+			margin-top: 0.55rem;
+		}
+
+		.jump-links {
+			margin-top: 1.1rem;
 		}
 
 		.role-chips {
