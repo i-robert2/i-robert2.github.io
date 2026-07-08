@@ -424,7 +424,7 @@
 
 	@media (max-width: 640px) {
 		.hero {
-			padding: 0.6rem 0;
+			padding: 0.9rem 0;
 		}
 
 		.hero h1 {
@@ -436,38 +436,38 @@
 		}
 
 		.subtitle {
-			font-size: 0.94rem;
-			line-height: 1.5;
-			margin-top: 0.6rem;
+			font-size: 0.97rem;
+			line-height: 1.56;
+			margin-top: 0.72rem;
 			text-align: justify;
 		}
 
 		.credibility {
-			font-size: 0.86rem;
-			line-height: 1.48;
-			margin-top: 0.6rem;
+			font-size: 0.89rem;
+			line-height: 1.54;
+			margin-top: 0.7rem;
 			text-align: justify;
 		}
 
 		.roles {
-			margin-top: 0.7rem;
+			margin-top: 0.82rem;
 		}
 
 		.roles-label {
-			font-size: 0.84rem;
+			font-size: 0.87rem;
 		}
 
 		.roles.current-role {
-			margin-top: 0.5rem;
+			margin-top: 0.55rem;
 		}
 
 		.jump-links {
-			margin-top: 0.85rem;
+			margin-top: 1rem;
 			gap: 0.3rem;
 		}
 
 		.jump-links a {
-			padding: 0.4rem 0.78rem 0.4rem 0.55rem;
+			padding: 0.5rem 0.78rem 0.5rem 0.55rem;
 			font-size: 0.75rem;
 		}
 
@@ -478,7 +478,7 @@
 		}
 
 		.hero-links {
-			margin-top: 0.55rem;
+			margin-top: 0.65rem;
 			gap: 0.6rem;
 		}
 
